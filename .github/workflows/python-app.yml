@@ -41,7 +41,7 @@ jobs:
           pyinstaller --onefile rssPush.py
 
   release:
-    needs: [build-ubuntu, build-windows, build-macos]
+    needs: [build-windows]
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
